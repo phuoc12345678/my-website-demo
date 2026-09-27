@@ -1,0 +1,150 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: auto;
+    /* Set the height of the body equal to the screen height */
+    height: 100vh; 
+    overflow: auto;
+}
+
+table{
+    width: 500px;
+    margin: 20px auto;  
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th{
+    background-color: #4CAF50;
+    color: white;
+}
+
+th, td{
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.Main_box{
+    background-color: lightblue;
+    text-align: center;
+    padding: 3px;
+    font-size: 30px;
+    color: black;
+}
+
+.Left_box{
+    float: left;
+    width: 150px;
+    height: 2000px;
+    background: #e2e2e2;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+.Right_box{
+    float: left;
+    width: 1100px;
+    height: 500px;
+    padding: 20px;
+
+}
+/* .testbtn {
+  padding: 20px;
+  background-color: rgb(0, 183, 0);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 5px;
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+} */
+
+.testbtn {
+    background-color: transparent;
+    color: rgb(0, 183, 0);
+    border: 2px solid rgb(0, 183, 0);
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 5px;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.testbtn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 183, 0);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.testbtn:hover::after {
+    width: 100%;
+}
+
+.testbtn:hover {
+    color: white;
+}
+
+.testbtn:hover {
+    color: white;
+}
+
+.witter {
+    
+    /* width: 800px;
+    height: 100px; */
+    border: 2px solid #333;
+    border-radius: 100px;   
+    /* text-align:center; */
+    background-color: #c6f9fb;
+    /* position: absolute; */
+    border: 2px solid black;
+    margin: 50px;
+    padding: 30px;
+    
+}
+
+.witter h2{
+    color: red;
+    /* position: absolute;
+    right: 800px; */
+}
+
+.text-change-color {
+  animation: text-color 1s infinite; 
+}
+@keyframes text-color{
+    0% { color: #FF0000; 
+    } 
+    16.66% { color: #FF7F00; 
+    } 
+    33.33% { color: #FFFF00; 
+    } 
+    50% { color: #00FF00; 
+    } 
+    66.66% { color: #0000FF; 
+    } 
+    83.33% { color: #4B0082; 
+    } 
+    100% { color: #8B00FF; 
+    } 
+ } 
